@@ -7,14 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "npm run clone:all && npm run npminstall:all && npm run config:all",
     "clone:all": "concurrently \"npm run clone:getItem\" \"npm run clone:getItems\" \"npm run clone:createItem\" \"npm run clone:updateItem\" \"npm run clone:deleteItem\" \"npm run clone:data\" \"npm run clone:api\" \"npm run clone:ui\"",
-    "clone:getItem": "git -C sandbox-getItem pull || git clone https://gitlab.com/sandbox-training/sandbox-getItem",
-    "clone:getItems": "git -C sandbox-getItems pull || git clone https://gitlab.com/sandbox-training/sandbox-getItems",
-    "clone:createItem": "git -C sandbox-createItem pull || git clone https://gitlab.com/sandbox-training/sandbox-createItem",
-    "clone:updateItem": "git -C sandbox-updateItem pull || git clone https://gitlab.com/sandbox-training/sandbox-updateItem",
-    "clone:deleteItem": "git -C sandbox-deleteItem pull || git clone https://gitlab.com/sandbox-training/sandbox-deleteItem",
-    "clone:data": "git -C sandbox-data pull || git clone https://gitlab.com/sandbox-training/sandbox-data",
-    "clone:api": "git -C sandbox-api pull || git clone https://gitlab.com/sandbox-training/sandbox-api",
-    "clone:ui": "git -C sandbox-ui pull || git clone https://gitlab.com/sandbox-training/sandbox-ui",
+    "clone:getItem": "git -C sandbox-getItem pull || git clone https://github.com/sandbox-training/sandbox-getItem",
+    "clone:getItems": "git -C sandbox-getItems pull || git clone https://github.com/sandbox-training/sandbox-getItems",
+    "clone:createItem": "git -C sandbox-createItem pull || git clone https://github.com/sandbox-training/sandbox-createItem",
+    "clone:updateItem": "git -C sandbox-updateItem pull || git clone https://github.com/sandbox-training/sandbox-updateItem",
+    "clone:deleteItem": "git -C sandbox-deleteItem pull || git clone https://github.com/sandbox-training/sandbox-deleteItem",
+    "clone:data": "git -C sandbox-data pull || git clone https://github.com/sandbox-training/sandbox-data",
+    "clone:api": "git -C sandbox-api pull || git clone https://github.com/sandbox-training/sandbox-api",
+    "clone:ui": "git -C sandbox-ui pull || git clone https://github.com/sandbox-training/sandbox-ui",
     "npminstall:all": "concurrently \"npm run npminstall:getItem\" \"npm run npminstall:getItems\" \"npm run npminstall:createItem\" \"npm run npminstall:updateItem\" \"npm run npminstall:deleteItem\" \"npm run npminstall:data\" \"npm run npminstall:api\" \"npm run npminstall:ui\"",
     "npminstall:getItem": "cd sandbox-getItem && npm install",
     "npminstall:getItems": "cd sandbox-getItems && npm install",
@@ -50,15 +50,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/sandbox-training/sandbox-stack.git"
+    "url": "git+https://github.com/sandbox-training/sandbox-stack.git"
   },
   "keywords": [],
   "author": "Thomas Sloboda <thomas@sloboda.fr>",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/sandbox-training/sandbox-stack/issues"
+    "url": "https://github.com/sandbox-training/sandbox-stack/issues"
   },
-  "homepage": "https://gitlab.com/sandbox-training/sandbox-stack#readme.md",
+  "homepage": "https://github.com/sandbox-training/sandbox-stack#readme.md",
   "dependencies": {
     "concurrently": "^3.5.0"
   }
