@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+*.db
+sandbox-api
+sandbox-createItem
+sandbox-data
+sandbox-deleteItem
+sandbox-getItem
+sandbox-getItems
+sandbox-ui
+sandbox-updateItem
